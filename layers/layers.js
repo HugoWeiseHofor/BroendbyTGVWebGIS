@@ -262,14 +262,14 @@ var lyr_IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_1
                 style: style_IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16,
                 popuplayertitle: 'Indledende skadesberegninger - Gennemsnitlig skadesomkostninger før tiltag [DKK/år',
                 interactive: true,
-    title: 'Indledende skadesberegninger - Gennemsnitlig skadesomkostninger før tiltag [DKK/år<br />\
+    title: 'Indledende skadesberegninger - Gennemsnitlig skadesomkostninger før tiltag [DKK/år]<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16_0.png" /> 0 - 20000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16_1.png" /> 20000 - 40000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16_2.png" /> 40000 - 60000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16_3.png" /> 60000 - 80000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16_4.png" /> 80000 - 100000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16_5.png" /> 100000 - 120000<br />\
-    <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16_6.png" /> 120000 - 47624000<br />' });
+    <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_16_6.png" /> +120000<br />' });
 var format_Vandlb100mbuffer_17 = new ol.format.GeoJSON();
 var features_Vandlb100mbuffer_17 = format_Vandlb100mbuffer_17.readFeatures(json_Vandlb100mbuffer, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -777,4 +777,5 @@ lyr_Ingenkloakering.set('fieldLabels', {'fid': 'no label', 'doklink': 'no label'
 lyr_Brndby.set('fieldLabels', {'fid': 'no label', 'navn': 'no label', });
 lyr_Brndby.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
+
 });
